@@ -19,7 +19,7 @@
 
 @implementation MobileChecker
 -(bool) validate:(NSString*) value{
-    return [StringCheckerUtil isMatch:value regex:@"^1\\d{10}$"];
+    return [StringCheckerUtil isMatch:value regex:@".*\\d.*"];
 }
 
 -(NSString *) getErrorMessage{
